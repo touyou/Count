@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // 色を変える
     func colorChange() {
         if number >= 10 {
             label.textColor = UIColor.brownColor()
@@ -38,7 +39,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    // 各計算のための関数
     @IBAction func plus() {
         number = number + 1
         label.text = String(number)
@@ -50,7 +51,7 @@ class ViewController: UIViewController {
         label.text = String(number)
         colorChange()
     }
-    
+    // ×と÷はsetした数字を順に掛けたり割ったりする
     @IBAction func times() {
         number = number * number2
         label.text = String(number)
